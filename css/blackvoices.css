@@ -1,44 +1,63 @@
 html, body{
     padding: 0;
     margin: 0;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
+/* fonts */
+
+@font-face{
+    font-family: Header;
+    src: url(../fonts/RoslindaleText-Bold.ttf);
+}
+@font-face{
+    font-family: Subhead;
+    src: url(../fonts/Prompt-Medium.ttf);
+}
+@font-face{
+    font-family: Body;
+    src: url(../fonts/Prompt-Light.ttf);
+}
+@font-face{
+    font-family: Regular;
+    src: url(../fonts/RoslindaleText-Regular.ttf);
+}
+@font-face{
+    font-family: Nav;
+    src: url(../fonts/Prompt-Thin.ttf);
+}
 
 /* nav bar  */
 .nav{
+    display:flex;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 95vw;
     position: fixed;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-decoration: none;
-    padding-top: 5px;
-    width: 100vw;
-}
-#nav-BB{
-    text-align: left;
-    padding-right: 30vw;
-}
-#nav-Lantern{
-    text-align: right;
-    padding-left: 30vw;
-}
-#nav-BV{
-    text-align: center;
-    padding-right: 10vw;
-    padding-left: 10vw;
-}
-.nav li {
-    display: inline-block;
-    font-size: 16px;
-    padding-top: 10px;
+    justify-content: space-between;
+    background-color: black;
+    z-index: 1;
 }
 .nav a{
     text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: Nav;
 }
-@media screen and (max-width: 600px) {
-    .navb li {
-      float: none;
-      display: block;
-      width: 100%;
+.nav a:hover{
+    font-family: Subhead;
+}
+
+@media screen and (max-width: 750px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 
@@ -46,35 +65,132 @@ html, body{
 .flex-container{
     display: flex;
     flex-direction: column;
-    padding-top: 10vh;
+    padding-top: 5vh;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
+/* large text marquee  */
+
+.marquee-grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 0;
+    margin: 0;
+}
+.largetext marquee{
+    font-size: 30vh;
+    font-family: Regular;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-width: 3px;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto ;
+    width: 50vw;
+    grid-gap: 1.5vw;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+.intro-title{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    font-family: Header;
+    font-size: 3vw;
+}
+.intro-text{
+    font-family: Body;
+    font-size: 16px;
+}
 
 /* posts  */
 
 .post-container{
     display: grid;
-    grid-template-columns: 20vw auto;
-    grid-template-rows: 25vh auto; 
-    grid-gap: 70px;
-    padding-top: 100px;
+    grid-template-columns: 20vw auto; 
+    grid-gap: 5vw;
+    padding-top: 4vh;
     padding-bottom: 4vh;
 }
 .post-image { 
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
 }
 .post-text { 
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    vertical-align: text-bottom;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: end;
+    text-align: right;
+}
+.post-container1{
+    display: grid;
+    grid-template-columns: auto 20vw; 
+    grid-gap: 5vw;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+.post-image1 { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: end;
+}
+.post-text1 { 
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.story-title{
+    font-family: Header;
+    font-size: 3vw;
+}
+.story-tease{
+    font-family: Body;
+    font-size: 1vw;
+}
+
+@media only screen and (max-width: 750px) {
+    .post-image {
+      width: 20vw;
+    }
+    .post-image1{
+        width: 20vw;
+    }
+  }
+
+
+/* button  */
+
+button{
+    background-color: transparent;
+    font-family: Nav;
+    border-color: yellow;
+    border-radius: 8px;
+    display: inline-block;
+    border-width: thin;
+    justify-content: center;
+    padding: 8px 25px;
+    font-size: 17.5px;
+    color: yellow;
+}
+button:hover{
+    border: none;
+    font-family: Nav;
+    color: black;
+    background-color: yellow;
+}
+button:active{
+    border: none;
+    font-family: Nav;
+    color: #6B705C;
+    background-color: black;
 }
