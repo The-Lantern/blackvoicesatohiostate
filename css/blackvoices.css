@@ -190,8 +190,20 @@ button:active{
         z-index: 1;
         width: 100vw;
         align-items: center;
-        padding: 2vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+        padding-right: 3vw;
+        padding-left: .4vw;
         font-size: 12px;
+    }
+    .nav-item{
+        justify-self: flex-start;
+    }
+    .nav a:hover{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: Nav;
     }
 
     .post-container{
@@ -236,11 +248,12 @@ button:active{
         text-align: center;
         font-family: Header;
         font-size: 35px;
-        padding-bottom: 5vh;
+        padding-bottom: 3vh;
     }
     .intro-text{
         font-family: Body;
         font-size: 12px;
+        text-align: center;
     }
 
     .story-title{
