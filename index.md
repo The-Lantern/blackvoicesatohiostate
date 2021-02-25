@@ -7,5 +7,6 @@
 
 <body>
 	<h1>Black Voice at Ohio State</h1>
+	  <a href="index.html">Black Voices</a>
 </body>
 </html>
