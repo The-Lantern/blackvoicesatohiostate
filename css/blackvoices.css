@@ -1,0 +1,80 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* nav bar  */
+.nav{
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-decoration: none;
+    padding-top: 5px;
+    width: 100vw;
+}
+#nav-BB{
+    text-align: left;
+    padding-right: 30vw;
+}
+#nav-Lantern{
+    text-align: right;
+    padding-left: 30vw;
+}
+#nav-BV{
+    text-align: center;
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+.nav li {
+    display: inline-block;
+    font-size: 16px;
+    padding-top: 10px;
+}
+.nav a{
+    text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    .navb li {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+}
+
+/* flex box housing posts */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10vh;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+/* posts  */
+
+.post-container{
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-rows: 25vh auto; 
+    grid-gap: 70px;
+    padding-top: 100px;
+    padding-bottom: 4vh;
+}
+.post-image { 
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.post-text { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    vertical-align: text-bottom;
+}
