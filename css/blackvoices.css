@@ -96,10 +96,12 @@ html, body{
     text-align: center;
     font-family: Header;
     font-size: 3vw;
+    color: yellow;
 }
 .intro-text{
     font-family: Body;
     font-size: 16px;
+    initial-letter: 2;
 }
 
 /* posts  */
@@ -144,10 +146,19 @@ html, body{
 .story-title{
     font-family: Header;
     font-size: 3vw;
+    color: yellow;
 }
 .story-tease{
     font-family: Body;
     font-size: 1vw;
+}
+
+.intro-text::first-letter{
+    initial-letter: 2;
+    font-family: Regular;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-width: 3px;
 }
 
 
