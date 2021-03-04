@@ -104,6 +104,16 @@ html, body{
     initial-letter: 2;
 }
 
+/* logos */
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 38vw;
+    padding-bottom: 5vh;
+}
+
 /* posts  */
 
 .post-container{
@@ -111,7 +121,7 @@ html, body{
     grid-template-columns: 20vw auto; 
     grid-gap: 3vw;
     padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-bottom: 10vh;
     /* padding-left: 4vw;
     padding-right: 4vw; */
 }
@@ -125,14 +135,14 @@ html, body{
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: end;
-    text-align: right;
+    text-align: left;
 }
 .post-container1{
     display: grid;
     grid-template-columns: auto 20vw; 
     grid-gap: 3vw;
     padding-top: 4vh;
-    padding-bottom: 4vh;
+    padding-bottom: 10vh;
     padding-left: 4vw;
     padding-right: 4vw;
 }
@@ -146,24 +156,36 @@ html, body{
 .post-text1 { 
     grid-column-start: 2;
     grid-column-end: 3;
+    text-align: left;
 }
 .story-title{
     font-family: Header;
     font-size: 3vw;
     color: yellow;
+    text-align: left;
 }
 .story-tease{
     font-family: Body;
     font-size: 1vw;
+    text-align: left;
 }
 
 .small-post-container{
     display: flex;
     flex-direction: row;
-    padding-bottom: 5vh;
+    padding-bottom: 15vh;
     padding-top: 5vh;
     width: 95vw;
     justify-content: space-evenly;
+}
+.story-title-small{
+    font-family: Header;
+    font-size: 2vw;
+    color: yellow;
+}
+.story-tease-small{
+    font-family: Body;
+    font-size: .9vw;
 }
 /* #flex-start{
     justify-self: flex-start;
@@ -208,9 +230,9 @@ button:active{
     background-color: black;
 }
 
-/* phone responsive  */
+/* Phone Breakpoint  */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 0px) and (max-width: 640px) {
     .nav {
         display: flex;
         flex-wrap: wrap;
@@ -272,7 +294,7 @@ button:active{
 
     button{
         font-size: 12px;
-        padding: 5px 12px;
+        padding: 8px 16px;
     }
     .largetext marquee{
         font-size: 25vh;
@@ -283,7 +305,7 @@ button:active{
         flex-direction: column;
         width: 75vw;
         grid-gap: 1.5vw;
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
         padding-top: 10vh;
     }
     .intro-title{
@@ -300,7 +322,7 @@ button:active{
 
     .story-title{
         font-family: Header;
-        font-size: 35px;
+        font-size: 28px;
     }
     .story-tease{
         font-family: Body;
@@ -315,22 +337,345 @@ button:active{
         align-items: center;
         padding: 5vw; 
         /* width: 95vw; */
+        height: 90%;
+        width: 90%;
     }
     .small-post-image{
-        padding-bottom: 2vh;
+        padding-bottom: 4vh;
     }
     .small-post-image1{
-        padding-bottom: 2vh;
+        padding-bottom: 4vh;
     }
     .small-post-text{
-        padding-bottom: 2vh;
+        padding-bottom: 6vh;
     }
     .small-post-text1{
         padding-bottom: 2vh;
     }
-    .flex-container{
-        justify-content: center;
+
+    .story-title-small{
+        font-size: 28px;
     }
+
+    .story-tease-small{
+        font-size: 12px;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        padding-bottom: 5vh;
+    }
+    .blackxbold{
+        padding-bottom: 2vh;
+    }
+
+
+
+  }
+
+/* iPad Pro Breakpoint */
+
+  @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    
+    .marquee-grid{
+        padding-top: 30px
+    }
+    
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        width: 95%;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 25px;
+        font-size: 16px;
+    }
+    .nav-item{
+        justify-self: flex-start;
+    }
+    .nav a:hover{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: Nav;
+    }
+
+    .post-container{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        padding: 5vw;
+    }
+    .post-image{
+        padding-bottom: 2vh;
+    }
+    .post-text{
+        padding-bottom: 2vh;
+        text-align: left;
+    }
+    .post-image1{
+        padding-bottom: 2vh;
+    }
+    .post-text1{
+        padding-bottom: 2vh;
+        text-align: left;
+    }
+    .post-container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw;
+    }
+
+    img{
+        width: 100%;
+        justify-self: center;
+    }
+
+    button{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .largetext marquee{
+        font-size: 25vh;
+    }
+
+    .intro{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto ;
+        width: 60%;
+        grid-gap: 1.5vw;
+        padding-bottom: 4vh;
+        padding-top: 8vh;
+    }
+    .intro-title{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+        font-family: Header;
+        font-size: 64px;
+        color: yellow;
+    }
+    .intro-text{
+        font-family: Body;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .story-title{
+        font-family: Header;
+        font-size: 42px;
+    }
+    .story-tease{
+        font-family: Body;
+        font-size: 18px;
+    }
+
+    .small-post-container{
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw; 
+        /* width: 95vw; */
+        height: 90%;
+        width: 90%;
+    }
+    .small-post-image{
+        padding-bottom: 4vh;
+    }
+    .small-post-image1{
+        padding-bottom: 4vh;
+    }
+    .small-post-text{
+        padding-bottom: 6vh;
+    }
+    .small-post-text1{
+        padding-bottom: 2vh;
+    }
+
+    .story-title-small{
+        font-size: 42px;
+    }
+
+    .story-tease-small{
+        font-size: 18px;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        padding-bottom: 5vh;
+    }
+    .blackxbold{
+        padding-bottom: 2vh;
+    }
+
+
+
+  }
+
+/* iPad responsive */
+
+  @media only screen and (min-width: 800px) and (max-width: 1023px) {
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        width: 95%;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 25px;
+        font-size: 16px;
+    }
+    .nav-item{
+        justify-self: flex-start;
+    }
+    .nav a:hover{
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-family: Nav;
+    }
+
+    .post-container{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        padding: 5vw;
+    }
+    .post-image{
+        padding-bottom: 2vh;
+    }
+    .post-text{
+        padding-bottom: 2vh;
+        text-align: left;
+    }
+    .post-image1{
+        padding-bottom: 2vh;
+    }
+    .post-text1{
+        padding-bottom: 2vh;
+        text-align: left;
+    }
+    .post-container1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw;
+    }
+
+    img{
+        width: 100%;
+        justify-self: center;
+    }
+
+    button{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+    .largetext marquee{
+        font-size: 25vh;
+    }
+
+    .intro{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto ;
+        width: 60%;
+        grid-gap: 1.5vw;
+        padding-bottom: 4vh;
+        padding-top: 8vh;
+    }
+    .intro-title{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+        font-family: Header;
+        font-size: 64px;
+        color: yellow;
+    }
+    .intro-text{
+        font-family: Body;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .story-title{
+        font-family: Header;
+        font-size: 42px;
+    }
+    .story-tease{
+        font-family: Body;
+        font-size: 18px;
+    }
+
+    .small-post-container{
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5vw; 
+        /* width: 95vw; */
+        height: 90%;
+        width: 90%;
+    }
+    .small-post-image{
+        padding-bottom: 4vh;
+    }
+    .small-post-image1{
+        padding-bottom: 4vh;
+    }
+    .small-post-text{
+        padding-bottom: 6vh;
+    }
+    .small-post-text1{
+        padding-bottom: 2vh;
+    }
+
+    .story-title-small{
+        font-size: 42px;
+    }
+
+    .story-tease-small{
+        font-size: 18px;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 60%;
+        padding-bottom: 5vh;
+    }
+    .blackxbold{
+        padding-bottom: 2vh;
+    }
+
+
 
   }
 
