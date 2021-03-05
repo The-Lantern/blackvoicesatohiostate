@@ -63,6 +63,7 @@ html, body{
     justify-content: center;
     align-items: center;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* large text marquee  */
@@ -736,11 +737,9 @@ button:active{
     .post-container{
         display: grid;
         grid-template-columns: 20vw auto; 
-        grid-gap: 30px;
+        grid-gap: 20px;
         padding-top: 4vh;
         padding-bottom: 10vh;
-        padding-left: 4vw;
-        padding-right: 4vw;
     }
     .post-image { 
         grid-column-start: 2;
@@ -796,16 +795,20 @@ button:active{
         justify-content: space-between;
     }
     .small-post-text{
-        padding: 20px;
+        padding: 10px;
+        width: 25%;
     }
     .small-post-image{
-        padding: 20px;
+        padding: 10px;
+        width: 25%;
     }
     .small-post-text1{
-        padding: 20px;
+        padding: 10px;
+        width: 25%;
     }
     .small-post-image1{
-        padding: 20px;
+        padding: 10px;
+        width: 25%;
     }
     .story-title-small{
         font-family: Header;
