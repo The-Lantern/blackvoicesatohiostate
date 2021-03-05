@@ -363,7 +363,7 @@ button:active{
 
 /* iPad Pro Breakpoint */
 
-  @media only screen and (min-width: 1024px){
+  @media only screen and (min-width: 1024px) and (max-width: 1200px){
     
     .marquee-grid{
         padding-top: 30px
@@ -517,7 +517,7 @@ button:active{
 
 /* iPad responsive */
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 870px) {
     .nav {
         display: flex;
         flex-wrap: wrap;
