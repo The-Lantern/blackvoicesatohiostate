@@ -216,6 +216,15 @@ button:active{
     background-color: black;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: Nav;
+    padding-bottom: 2vh;
+    font-size: .5rem;
+    text-align: center;
+}
+
   /* Phone Breakpoint  */
 
 @media only screen and (max-width: 640px) {
@@ -232,7 +241,7 @@ button:active{
         padding-bottom: 3vw;
         padding-right: 3vw;
         padding-left: .4vw;
-        font-size: 12px;
+        font-size: .8rem;
     }
     .nav-item{
         justify-self: flex-start;
@@ -279,7 +288,7 @@ button:active{
     }
 
     button{
-        font-size: 12px;
+        font-size: .8rem;
         padding: 8px 16px;
     }
     .largetext marquee{
@@ -414,7 +423,7 @@ button:active{
     }
 
     button{
-        font-size: 12px;
+        font-size: 1rem;
         padding: 8px 16px;
     }
     .largetext marquee{
@@ -452,7 +461,7 @@ button:active{
     }
     .story-tease{
         font-family: Body;
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .small-post-container{
@@ -614,11 +623,11 @@ button:active{
 
     .story-title{
         font-family: Header;
-        font-size: 42px;
+        font-size: 3rem;
     }
     .story-tease{
         font-family: Body;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .small-post-container{
@@ -646,11 +655,11 @@ button:active{
     }
 
     .story-title-small{
-        font-size: 42px;
+        font-size: 3rem;
     }
 
     .story-tease-small{
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .logo{
