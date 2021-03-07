@@ -78,7 +78,7 @@ html, body{
     font-size: 30vh;
     font-family: Regular;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: yellow;
+    -webkit-text-stroke-color: #F6EB0F;
     -webkit-text-stroke-width: 3px;
 }
 
@@ -97,7 +97,7 @@ html, body{
     text-align: center;
     font-family: Header;
     font-size: 3rem;
-    color: yellow;
+    color: #F6EB0F;
 }
 .intro-text{
     font-family: Body;
@@ -162,7 +162,7 @@ html, body{
 .story-title{
     font-family: Header;
     font-size: 2rem;
-    color: yellow;
+    color: #F6EB0F;
     text-align: left;
 }
 .story-tease{
@@ -182,7 +182,7 @@ html, body{
 .story-title-small{
     font-family: Header;
     font-size: 2rem;
-    color: yellow;
+    color: #F6EB0F;
 }
 .story-tease-small{
     font-family: Body;
@@ -195,19 +195,19 @@ html, body{
 button{
     background-color: transparent;
     font-family: Nav;
-    border-color: yellow;
+    border-color: #F6EB0F;
     border-radius: 20px;
     display: inline-block;
     border-width: thin;
     justify-content: center;
     padding: 8px 25px;
     font-size: 1rem;
-    color: yellow;
+    color: #F6EB0F;
 }
 button:hover{
     font-family: Nav;
     color: black;
-    background-color: yellow;
+    background-color: #F6EB0F;
 }
 button:active{
     border: none;
@@ -221,7 +221,7 @@ footer{
     justify-content: center;
     font-family: Nav;
     padding-bottom: 2vh;
-    font-size: .75rem;
+    font-size: .8rem;
     text-align: center;
 }
 
@@ -363,11 +363,13 @@ span{
     .blackxbold{
         padding-bottom: 3vh;
     }
+
+    footer{
+        font-size: .5rem;
+    }
   }
 
-  footer{
-      font-size: .5rem;
-  }
+
 
 /* iPad responsive */
 
@@ -684,6 +686,9 @@ span{
 
 @media only screen and (min-width: 1200px){
     
+    .flex-container{
+        justify-content: center;
+    }
     .nav{
         width: 98%;
         padding-top: 20px;
@@ -694,10 +699,10 @@ span{
     /* large text marquee  */
     
     .marquee-grid{
-        padding-top: 30px;
+        padding-top: 20px;
     }
     .largetext marquee{
-        font-size: 25rem;
+        font-size: 16rem;
         font-family: Regular;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-color: yellow;
