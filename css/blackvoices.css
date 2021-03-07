@@ -225,6 +225,11 @@ footer{
     text-align: center;
 }
 
+span{
+    font-family: Subhead;
+    font-size: 0.8rem;
+}
+
   /* Phone Breakpoint  */
 
 @media only screen and (max-width: 640px) {
@@ -358,6 +363,10 @@ footer{
     .blackxbold{
         padding-bottom: 3vh;
     }
+  }
+
+  footer{
+      font-size: .5rem;
   }
 
 /* iPad responsive */
