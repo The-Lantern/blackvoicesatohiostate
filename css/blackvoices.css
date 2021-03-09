@@ -220,7 +220,7 @@ footer{
     display: flex;
     justify-content: center;
     font-family: Nav;
-    padding-bottom: 2vh;
+    padding-bottom: 3vh;
     font-size: .8rem;
     text-align: center;
 }
